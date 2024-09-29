@@ -22,12 +22,6 @@ Este es un objeto Semaphore estático que sirve como mutex (bloqueo de exclusió
 
 El constructor inicializa el ID del filósofo y los dos semáforos de bifurcación.
 
-java
-
-Verificar
-Editar
-Copiar código
-
 ```java
 public Filosofo(int id, Semáforo tenedorIzquierdo, Semáforo tenedorDerecho) {
     this.id = id;
@@ -42,10 +36,6 @@ public Filosofo(int id, Semáforo tenedorIzquierdo, Semáforo tenedorDerecho) {
 
 Este método privado simula al filósofo pensando. Imprime un mensaje indicando que el filósofo está pensando y luego duerme durante una duración aleatoria entre 0 y 1000 milisegundos.
 
-Verificar
-Editar
-Copiar código
-
 ```java
 private void pensar() throws InterruptedException {
     System.out.println("Filósofo " + id + " está pensando.");
@@ -59,10 +49,6 @@ La declaración throws InterruptedException indica que este método puede lanzar
 
 Este método privado simula al filósofo comiendo. Imprime un mensaje indicando que el filósofo está comiendo y luego duerme durante una duración aleatoria entre 0 y 1000 milisegundos.
 
-Verificar
-Editar
-Copiar código
-
 ```java
 private void comer() throws InterruptedException {
     System.out.println("Filósofo " + id + " está comiendo.");
@@ -75,10 +61,6 @@ Similar a pensar(), este método puede lanzar una InterruptedException si el hil
 ### Método run()
 
 El método run() es el punto de entrada del hilo. Es donde se define el comportamiento del filósofo.
-
-Verificar
-Editar
-Copiar código
 
 ```java
 @Override
