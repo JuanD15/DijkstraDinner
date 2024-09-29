@@ -116,5 +116,3 @@ La clase Filosofo está diseñada para modelar el comportamiento de un filósofo
 - Los métodos pensar() y comer() simulan los comportamientos de pensamiento y alimentación del filósofo.
 - Los semáforos tenedorIzquierdo y tenedorDerecho representan los forks, que son recursos compartidos a los que se debe acceder de forma sincrónica.
 - El semáforo mutex garantiza que solo un filósofo pueda acceder a la sección crítica del código (adquisición y liberación de bifurcaciones) a la vez.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
