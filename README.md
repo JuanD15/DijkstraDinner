@@ -1,6 +1,6 @@
 # Solucion del problema de Dijksta para la cena de n filosofos
 
-## Clase Filosofo (Philosopher)
+## Clase Filosofo
 
 La clase Filosofo extiende la clase Thread, lo que significa que cada filósofo es un hilo separado que puede ejecutarse simultáneamente con otros filósofos. Esto es necesario porque el problema de los filósofos que comen implica que varios filósofos compiten por recursos (forks) simultáneamente.
 
@@ -32,7 +32,7 @@ public Filosofo(int id, Semáforo tenedorIzquierdo, Semáforo tenedorDerecho) {
 
 ## Métodos
 
-### pensar() (think)
+### pensar()
 
 Este método privado simula al filósofo pensando. Imprime un mensaje indicando que el filósofo está pensando y luego duerme durante una duración aleatoria entre 0 y 1000 milisegundos.
 
@@ -45,7 +45,7 @@ private void pensar() throws InterruptedException {
 
 La declaración throws InterruptedException indica que este método puede lanzar una InterruptedException si el hilo se interrumpe mientras duerme.
 
-### comer() (eat)
+### comer()
 
 Este método privado simula al filósofo comiendo. Imprime un mensaje indicando que el filósofo está comiendo y luego duerme durante una duración aleatoria entre 0 y 1000 milisegundos.
 
